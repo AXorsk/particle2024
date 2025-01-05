@@ -2,7 +2,7 @@ window.onload = function() {
 particlesJS("particles", {
 	particles: {
 		number: {
-			value: 500,
+			value: 200,
 			density: {
 				enable: true,
 				value_area: 800
@@ -74,7 +74,8 @@ particlesJS("particles", {
 			onhover: {
 				enable: true,
 				mode: "repulse"
-				// mode: ["grab", "bubble"]
+				// mode: "bubble"
+				// mode: "grab"
 			},
 			onclick: {
 				enable: true,
@@ -90,14 +91,14 @@ particlesJS("particles", {
 				}
 			},
 			bubble: {
-				distance: 400,
+				distance: 200,
 				size: 40,
 				duration: 2,
 				opacity: 8,
 				speed: 3
 			},
 			repulse: {
-				distance: 200,
+				distance: 100,
 				duration: 0.4
 			},
 			push: {
@@ -132,6 +133,6 @@ function getRandomColor() {
 	return color;
 }
 
-setInterval(changeTextColor, 1000);
+setInterval(changeTextColor, 500);
 
 }
